@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ToDo Planning App
 
 A beautiful and functional task management application built with Next.js, featuring a clean green-themed UI with dark mode support.
@@ -256,3 +257,7 @@ This project is open source and available for personal and commercial use.
 ## Support
 
 For issues or questions, please open an issue on GitHub.
+=======
+# ToDoApp
+Simple ToDo App designed and built by myself
+>>>>>>> 8a0180925823764d85deec6b3a8b7bf3be285cb5
