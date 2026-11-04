@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
+
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+
 import { Geist_Mono, Noto_Sans as V0_Font_Noto_Sans, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
+// Initialize fonts
 const _notoSans = V0_Font_Noto_Sans({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
 const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
 
@@ -20,11 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <div className="mobile-shell">
-          <div className="mobile-viewport">
-            {children}
-          </div>
-        </div>
+        {children}
         <Analytics />
       </body>
     </html>
