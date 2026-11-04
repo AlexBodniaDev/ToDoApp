@@ -16,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uk">
-      <body className={`${inter.className} bg-slate-950 min-h-screen text-slate-100 flex flex-col m-0 p-0`}>
-        <div className="flex-1 flex flex-col w-full min-h-screen">
-          {children}
+      <body className={`${inter.className} bg-slate-950 text-slate-100 m-0 p-0`}>
+        <div className="mobile-shell">
+          <div className="mobile-viewport">
+            {children}
+          </div>
         </div>
       </body>
     </html>
