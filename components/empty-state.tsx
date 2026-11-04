@@ -18,12 +18,12 @@ export function EmptyState() {
         <rect x="70" y="95" width="30" height="6" rx="3" fill="#4ade80" />
       </svg>
       <div className="relative">
-        <div className="bg-white rounded-2xl shadow-lg p-4 max-w-[200px]">
+        <div className="bg-muted rounded-2xl shadow-lg p-4 max-w-[200px]">
           <p className="text-xs text-foreground text-center leading-relaxed">
             You can add new task by clicking plus button
           </p>
         </div>
-        <div className="absolute -bottom-2 right-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white" />
+        <div className="absolute -bottom-2 right-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-muted" />
       </div>
     </div>
   )

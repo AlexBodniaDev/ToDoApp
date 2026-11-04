@@ -48,10 +48,10 @@ export function TimePicker({ selectedTime, onSelect, onClose }: TimePickerProps)
                 <select
                   value={hours}
                   onChange={(e) => setHours(e.target.value)}
-                  className="text-4xl font-medium bg-transparent border-b-2 border-foreground/20 focus:border-[#4ade80] outline-none text-center w-20"
+                  className="text-4xl font-medium bg-transparent border-b-2 border-foreground/20 focus:border-[#4ade80] outline-none text-center w-20 text-foreground"
                 >
                   {Array.from({ length: 24 }, (_, i) => i.toString().padStart(2, "0")).map((hour) => (
-                    <option key={hour} value={hour}>
+                    <option key={hour} value={hour} className="bg-background text-foreground">
                       {hour}
                     </option>
                   ))}
@@ -60,10 +60,10 @@ export function TimePicker({ selectedTime, onSelect, onClose }: TimePickerProps)
                 <select
                   value={minutes}
                   onChange={(e) => setMinutes(e.target.value)}
-                  className="text-4xl font-medium bg-transparent border-b-2 border-foreground/20 focus:border-[#4ade80] outline-none text-center w-20"
+                  className="text-4xl font-medium bg-transparent border-b-2 border-foreground/20 focus:border-[#4ade80] outline-none text-center w-20 text-foreground"
                 >
                   {Array.from({ length: 60 }, (_, i) => i.toString().padStart(2, "0")).map((minute) => (
-                    <option key={minute} value={minute}>
+                    <option key={minute} value={minute} className="bg-background text-foreground">
                       {minute}
                     </option>
                   ))}

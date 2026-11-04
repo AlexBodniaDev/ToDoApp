@@ -15,8 +15,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="uk">
-      <body className={`${inter.className} bg-slate-950 text-slate-100 m-0 p-0`}>
+    <html lang="uk" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem("darkMode")==="true")document.documentElement.classList.add("dark")}catch(e){}`,
+          }}
+        />
+      </head>
+      <body className={`${inter.className} text-foreground m-0 p-0`}>
         <div className="mobile-shell">
           <div className="mobile-viewport">
             {children}

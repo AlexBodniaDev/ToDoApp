@@ -1,22 +1,18 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 
 export default function SplashScreen() {
   const router = useRouter()
-  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
     const timer = setTimeout(() => {
       router.push("/signin")
     }, 2500)
 
     return () => clearTimeout(timer)
   }, [router])
-
-  if (!mounted) return null
 
   return (
     <div className="min-h-screen bg-[#2d3748] flex items-center justify-center">
